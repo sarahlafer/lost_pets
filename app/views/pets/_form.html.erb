@@ -1,0 +1,21 @@
+<div class="container">
+  <%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species %>
+  <%= f.input :found_on, as: :date %>
+  <%= f.button :submit, class: 'btn btn-danger w-100' %>
+  <% end %>
+</div>
+
+<%#= form_for @pet do |f| %>
+<%#= f.label :name, "Enter a name" %>
+<%#= f.text_field :name %>
+<%#= f.label :address, "Enter a address" %>
+<%#= f.text_field :address %>
+<%#= f.label :species, "Enter a species" %>
+<%#= f.text_field :species %>
+<%#= f.label :found_on, "Enter a date" %>
+<%#= f.date_field :found_on %>
+<%#= f.submit %>
+<%# end %>
